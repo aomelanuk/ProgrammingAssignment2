@@ -1,10 +1,13 @@
 ## Put comments here that give an overall description of what your
 ## functions do
-
+##library(MASS) downloading package for matrix inversion, without this package skript not working
+##After executing the code, the library will be unloaded from the environment
+##set_ginv main function for matrix inverse
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) 
 {
+  library(MASS)
   m <- NULL
   set <- function(y) {
     x <<- y
